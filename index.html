@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2?family= Poppins & display família= Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600 & swap" rel="stylesheet">
+    <title>Danilo Silva</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.jpg" alt= "Logo Danilo Silva"/>
+         </div>
+        <ul>
+            <li>
+                <a target="_blank" href=" https://github.com/Danilo1208 ">github</a>
+            </li>
+            <li>
+                <a target="_blank" href=" https://Danilo22rsi@gmail.com.br ">Email</a>
+            </li>
+            <li>
+                <a target="_blank"href=" https://wa.me/11951643143 ">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+       
+        <section class="container">
+            <div class="name">
+                <h1>Danilo Silva</h1>
+                <h5>front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-down"></i>
+            </div>
+            
+            <div style="display: none;" id="about">
+                <a>
+                  Dev Front End |  Back End | Javascript | C# | CSS | Node.js | HTML | React.js | Power BI avançado | Phyton | Google Cloud Platform
+                </a>
+           </div>
+           
+          <div class="form">
+               <div>
+                   <p> deixe seu contato!</p>
+               </div>
+           <form action="">
+               <input type="text" placeholder="Deixe seu melhor email:)">
+               <button>enviar!  </button>
+           
+            </form>
+           </div>
+     </section>
+    </main>
+
+<script>
+    function displayAbout() {
+        var arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate');
+        var display = document.getElementById('about');
+        display.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
